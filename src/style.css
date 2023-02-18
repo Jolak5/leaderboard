@@ -1,12 +1,29 @@
 body {
-  background-color: green;
+  background-color: rgb(119, 23, 117);
   color: white;
+  font-size: 16px;
 }
 
-section,
-.refresh,
-form {
-  display: flex;
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+main {
+  width: 689px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section {
@@ -14,9 +31,30 @@ section {
 }
 
 .refresh {
+  display: flex;
   gap: 10px;
 }
 
 form {
+  display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.submit {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.refresh > button {
+  padding: 10px;
+  border: solid 2px black;
+  box-shadow: 2px;
+  cursor: pointer;
 }
