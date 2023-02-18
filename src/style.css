@@ -2,3 +2,21 @@ body {
   background-color: green;
   color: white;
 }
+
+section,
+.refresh,
+form {
+  display: flex;
+}
+
+section {
+  gap: 5%;
+}
+
+.refresh {
+  gap: 10px;
+}
+
+form {
+  flex-direction: column;
+}
