@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(119, 23, 117);
+  background-color: rgb(133, 91, 13);
   color: white;
   font-size: 16px;
 }
@@ -16,6 +16,7 @@ h2 {
 section {
   display: grid;
   grid-template-columns: 40% 60%;
+  gap: 5%;
 }
 
 main {
@@ -26,13 +27,14 @@ main {
   transform: translate(-50%, -50%);
 }
 
-section {
-  gap: 5%;
-}
-
 .refresh {
   display: flex;
   gap: 10px;
+}
+
+.container {
+  /* border: solid 1px black; */
+  width: 80%;
 }
 
 form {
@@ -43,18 +45,26 @@ form {
 
 input {
   padding: 10px;
-  margin: 5px;
+  margin-top: 20px;
 }
 
 .submit {
   padding: 10px;
-  margin: 5px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
 .refresh > button {
   padding: 10px;
   border: solid 2px black;
-  box-shadow: 2px;
   cursor: pointer;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+li:nth-child(odd) {
+  background-color: green;
 }
