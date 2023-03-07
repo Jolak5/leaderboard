@@ -9,17 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -137,6 +126,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://leaderboard/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '../modules/postData'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '../modules/getData'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\n\r\n\r\n\r\nconst submit = document.getElementById('button');\r\nconst refresh = document.querySelector('.refresh');\r\nconst container = document.querySelector('.container');\r\n\r\n// const realData = { name, score };\r\n\r\nsubmit.addEventListener('click', (e) => {\r\n  e.preventDefault();\r\n  Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../modules/postData'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\r\n  Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../modules/getData'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\r\n});\r\n\r\nconst refreshResult = async () => {\r\n  let type = '';\r\n  const eachResult = await Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../modules/getData'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();\r\n  const allResult = eachResult.result;\r\n  allResult.forEach((item) => {\r\n    type += `<li>${item.user}: ${item.score}</li>`;\r\n  });\r\n  container.innerHTML = type;\r\n};\r\n\r\nrefresh.addEventListener('click', (e) => {\r\n  e.preventDefault();\r\n  refreshResult();\r\n});\r\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ })
 
