@@ -1,4 +1,70 @@
 body {
-  background-color: green;
+  background-color: rgb(133, 91, 13);
   color: white;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5%;
+}
+
+main {
+  width: 689px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.refresh {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  /* border: solid 1px black; */
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+input {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.submit {
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.refresh > button {
+  padding: 10px;
+  border: solid 2px black;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+li:nth-child(odd) {
+  background-color: green;
 }
